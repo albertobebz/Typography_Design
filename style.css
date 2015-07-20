@@ -187,14 +187,14 @@ header abbr {
   border-bottom: 1px solid #9C9B7A;
 }
 
-#preamble {
+#preamble-unique {
   background-image: url('images/butcher_chef.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-#preamble h3, #preamble p {
+#preamble-unique h3, #preamble-unique p {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
 }
@@ -245,7 +245,7 @@ header abbr {
   border-bottom: none;
 }
 
-#requirements a {
+#requirements-unique a {
   color: #FF974F;
 }
 
@@ -266,7 +266,7 @@ header abbr {
   color: #6d6f81;
 }
 
-#explanation {
+#explanation-unique {
   background-image: url('images/butcher_logo.jpg');
   background-repeat: no-repeat;
   background-size: 200px;
@@ -274,7 +274,7 @@ header abbr {
   background-color: white;
 }
 
-#explanation h3 {
+#explanation-unique h3 {
   color: black;
 }
 
@@ -288,14 +288,14 @@ header abbr {
   padding: 4em 10% 4em 8%;
 }
 
-#participation {
+#participation-unique {
   background-image: url('images/butcher_knife2.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 } 
-#participation h3, 
-#participation p {
+#participation-unique h3, 
+#participation-unique p {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2px 15px;
   color: white;
