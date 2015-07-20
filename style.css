@@ -1,0 +1,650 @@
+/*** Colors
+
+*Primary*
+Gray:         #9C9B7A;
+Orange:       #F54F29;
+Light-orange: #FFD393;
+
+*Secondary*
+Medium Green: #81a53d;
+Dark Green:   #405952;
+Grays:        #8b8d9b;
+Blues:        #6b6d85;
+Mid-Orange:   #FF974F;  
+
+***/
+
+/*** Webfonts ***/
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,500italic,500,400italic);
+
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,400italic,300italic);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,300italic,400italic,500italic);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,900,400italic);
+@import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,400);
+
+/*** Basic Elements ***/
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  font-family: 'Alegreya Sans', Verdana, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.6;
+  margin: 0; 
+  padding: 0;
+  color: #282932; 
+  background: white;
+  font-feature-settings: "kern", "liga";
+  -webkit-font-feature-settings: "kern", "liga";
+  -moz-font-feature-settings: "kern=1", "liga=1"; 
+  -moz-font-feature-settings: "kern", "liga";
+  -o-font-feature-settings: "kern", "liga";  
+}
+
+p { 
+  margin: 0;
+}
+
+p + p {
+  text-indent: 1.5em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Sigmar One', Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #9bc152;
+}
+
+h1 {
+  font-size: 3.157em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.369em;
+  line-height: 1.15;
+  margin: 0 0 .54em;
+}
+
+h3 { 
+  font-size: 1.777em;
+  line-height: 1.2;
+  margin: .9em 0 .64em;
+}
+
+.red {
+  color: #F54F29;
+  text-decoration: line-through;
+  font-weight: bolder;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+}
+
+a:link { 
+  text-decoration: none;
+  transition: all 0.4s ease;
+
+}
+a:visited { 
+  text-decoration: none; 
+}
+
+a:hover, a:focus, a:active { 
+  text-decoration: none; 
+}
+
+abbr {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: lowercase;
+}
+
+::selection {
+}
+
+
+/*** Specific Styles ***/
+
+header {
+  background-color: #FFD393; 
+  background-image: url('images/knife.jpg');
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 5.5em 4%;
+  text-align: center;
+  animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-aniamtion: fadein 2s;
+}
+
+header h1 { 
+  font-size: 6.2em;
+  font-weight: 900;
+  color: #F54F29; 
+}
+
+header h2 { 
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 1.777em;
+  letter-spacing: .3em;
+  color: white;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+header abbr {
+  text-transform: uppercase;
+}
+
+.summary {
+  color: #f6f4ec;
+  background: #F54F29;
+  background-image: url('images/chalk.jpg');
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 1.5em 6%;
+}
+
+.summary p {
+  font-size: 1.333em;
+  max-width: 44rem;
+  margin: 0 auto;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.summary p + p {
+  text-indent: 0;
+  font-size: normal;
+  font-size: 1em;
+  margin-top: .2em;
+  color: #FFD393;
+}
+
+.summary a {
+  font-family: 'Alegreya Sans SC', Verdana, sans-serif;
+  color: #FFD393;
+  border-bottom: 1px solid #FFD393;
+}
+
+.summary a:hover {
+  color: #9C9B7A;
+  border-bottom: 1px solid #9C9B7A;
+}
+
+#preamble {
+  background-image: url('images/butcher_chef.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#preamble h3, #preamble p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+}
+
+.preamble, .requirements {
+  background: #282932;
+  padding: 4em 6%;
+}
+
+.preamble h3, .requirements h3 {
+  color: white;
+  max-width: 34rem;
+  margin: 0 auto .62em;
+}
+
+.preamble p, .requirements p {
+  max-width: 34rem;
+  margin: 0 auto;
+  color: #f6f4ec;
+}
+
+.requirements a {
+  color: #f6f4ec;
+  border-bottom: 1px solid #f6f4ec;
+}
+
+.requirements a:hover {
+  color: #9bc152;
+  border-bottom: 1px solid #9bc152;
+}
+
+.requirements p:last-of-type {
+  max-width: 92%;
+  text-align: center;
+  font-style: italic;
+  text-indent: 0;
+  padding-top: 4em;
+  color: #6d6f81;
+}
+
+.requirements p:last-of-type a {
+  color: #9bc152;
+  border-bottom: none;
+}
+
+.requirements p:last-of-type a:hover {
+  color: #f6f4ec;
+  border-bottom: none;
+}
+
+#requirements a {
+  color: #FF974F;
+}
+
+.benefits {
+  background: #1b1b21;
+  padding: 4em 6%;
+}
+
+.benefits h3 {
+  max-width: 34rem;
+  margin: 0 auto .62em;
+  color: #8b8d9b;
+}
+
+.benefits p {
+  max-width: 34rem;
+  margin: 0 auto;
+  color: #6d6f81;
+}
+
+#explanation {
+  background-image: url('images/butcher_logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: top right;
+  background-color: white;
+}
+
+#explanation h3 {
+  color: black;
+}
+
+.explanation, .participation {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.explanation {
+  float: left;
+  padding: 4em 10% 4em 8%;
+}
+
+#participation {
+  background-image: url('images/butcher_knife2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+} 
+#participation h3, 
+#participation p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 15px;
+  color: white;
+}
+
+.participation {
+  display: inline-block;
+  padding: 4em 8% 4em 10%;
+  background: #9bc152;
+}
+
+.explanation h3, 
+.participation h3 {
+  margin: 0 auto .62em;
+  color: white;
+}
+
+.explanation p, 
+.participation p {
+  margin: 0 auto;
+}
+
+.participation a {
+  color: #282932;
+  border-bottom: 1px solid #282932;
+}
+
+.participation a:hover {
+  color: #f6f4ec;
+  border-bottom: 1px solid #f6f4ec;
+}
+
+.participation p:last-of-type a:nth-of-type(1),
+.participation p:last-of-type a:nth-of-type(2) {
+  font-family: 'Alegreya Sans SC', Verdana, sans-serif;
+  text-transform: lowercase;
+}
+
+#chef {
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: white;
+  color: red;
+  background-image: url('images/chef_draw.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+footer {
+  background: #9bc152;
+}
+
+/* TO CLEAR THE FOOTER */
+footer:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* width:20%  BECAUSE THERE ARE 5 LINKS tot=100%*/
+footer a {
+  float: left;
+  box-sizing: border-box;
+  width: 20%;
+  text-align: center;
+  background: #F54F29;
+  padding: 1em 0;
+  color: #f6f4ec;
+  letter-spacing: .05em;
+}
+
+/* SELECT JUST THE EVEN LINK IN THE FOOTER */
+footer a:nth-of-type(even) {
+  background: #9C9B7A;
+}
+
+footer a:hover {
+  background: #f6f4ec;
+  color: #9bc152;
+}
+
+aside {
+  width: 100%;
+}
+
+.sidebar {
+  background: #1b1b21;
+  color: #47495d;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.design-selection {
+  float: left;
+  width: 60%;
+  font-style: italic;
+  box-sizing: border-box;
+  border-right: 1px solid #47495d;
+}
+
+.design-archives, .resources {
+  display: inline-block;
+  width: 40%;
+}
+
+.sidebar h3 { 
+  font-size: .75em;
+  margin: 0;
+  line-height: 1.6;
+  padding: .5em 4%;
+  color: #6b6d85;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar li {
+  list-style-type: none;
+  padding: .3em 2%;
+}
+
+.sidebar a {
+  font-family: 'Alegreya Sans SC', 'Alegreys Sans', Verdana;
+  font-style: normal;
+  color: #FF974F; 
+  letter-spacing: 0.06em;
+}
+
+.sidebar a:hover {
+  color: #FFD393;
+}
+
+.design-selection a:nth-of-type(even) {
+  font-family: 'Alegreya Sans SC', Verdana, sans-serif;
+  letter-spacing: 0;
+  color: #f6f4ec;
+}
+
+.sidebar a:hover:nth-of-type(even) {
+  color: #47495d;
+}
+
+.resources h3 {
+  padding-top: .92em;
+}
+
+.design-archives a, .resources a {
+  color: #47495d;
+}
+
+/* Media Queries */
+
+@media (max-width: 64em) {
+  body {
+    font-size: 1.125em;
+  }
+
+  .summary p {
+    max-width: 40rem;
+  }
+
+  .explanation h3, 
+  .participation h3, 
+  .preamble h3, 
+  .requirements h3, 
+  .benefits h3 {
+    max-width: 27.5rem;
+  }
+
+  /*.explanation p, 
+  .participation p, 
+  .preamble p, 
+  .requirements p, 
+  .benefits p {
+  }*/
+}
+
+@media (max-width: 54em) {
+  body {
+    font-size: 1em;
+  }
+
+  .summary p {
+    max-width: 34rem;
+  }
+}
+
+@media (max-width: 47em) {
+  header h1 {
+    font-size: 4.5em;
+  }
+
+  header h2 {
+    font-size: 1.333em;
+  }
+
+  .explanation, .participation {
+    width: 100%;
+    padding: 4em 6%;
+  }
+}
+
+@media (max-width: 34em) {
+  header {
+    padding: 6em 4%;
+  }
+  header h1 {
+    font-size: 2.6em;
+    line-height: 0.8;
+  }
+
+  header h2 {
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    margin-top: 0.3em;
+  }
+
+  .summary p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 27.5rem;
+  }
+
+  .summary p + p {
+    font-size: .9em;
+  }
+
+  h3 {
+    font-size: 1.333em;
+  }
+
+  .design-selection {
+    width: 100%;
+    border-right: none;
+    padding: 0 3%;
+  }
+
+  .design-selection li:last-of-type {
+    border-bottom: 1px solid #47495d;
+    padding-bottom: 3em;
+  }
+
+  .design-archives {
+    padding-top: 3em;
+    width: 100%;
+  }
+
+  .resources {
+    width: 100%;
+  }
+}
+
+@media (min-width: 47em) {
+  .benefits {
+    position: absolute;
+    float: left;
+    background: none;
+    max-width: 7.5rem;
+    text-align: right;
+    margin-top: 12em;
+    left: 50%;
+    margin-left: -25.5rem;
+  }
+
+.benefits h3 {
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Alegreya Sans SC', 'Alegreya Sans', sans-serif;
+  font-style: normal;
+  }
+
+.benefits p {
+  font-size: .75em;
+  line-height: 1.4;
+  }
+}
+
+@media (min-width: 54em) {
+  .benefits {
+    max-width: 8rem;
+    margin-top: 12.5em;
+    margin-left: -28rem;
+  }
+}
+
+@media (min-width: 64.125em) {
+  .benefits {
+    max-width: 9.4rem;
+    margin-top: 13.1em;
+    margin-left: -34rem;
+  }
+
+  aside {
+    position: absolute;
+    top: -26.5em;
+    transition: all 0.4s ease;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-aniamtion: fadein 2s;
+  }
+
+  aside:hover {
+    top: -1em;
+  }
+
+  aside:after {
+    position: absolute;
+    content: "+";
+    text-align: center;
+    background: #1b1b21;
+    color: #f6f4ec;
+    font-size: 27px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    bottom: -0.65em;
+    left: 50%;
+  }
+}
+
+/* Animations */
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
