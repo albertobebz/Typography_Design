@@ -92,15 +92,15 @@ li {
 }
 
 a:link { 
-  text-decoration: none;
   transition: all 0.4s ease;
 
 }
-a:visited { 
-  text-decoration: none; 
-}
 
-a:hover, a:focus, a:active { 
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active { 
   text-decoration: none; 
 }
 
@@ -108,10 +108,6 @@ abbr {
   font-family: 'Alegreya Sans SC', sans-serif;
   text-transform: lowercase;
 }
-
-::selection {
-}
-
 
 /*** Specific Styles ***/
 
@@ -160,6 +156,7 @@ header abbr {
   padding: 1.5em 6%;
 }
 
+/* rem: = Relative to font-size of the root element */
 .summary p {
   font-size: 1.333em;
   max-width: 44rem;
@@ -194,23 +191,27 @@ header abbr {
   background-size: cover;
 }
 
-#preamble-unique h3, #preamble-unique p {
+#preamble-unique h3, 
+#preamble-unique p {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
 }
 
-.preamble, .requirements {
+.preamble, 
+.requirements {
   background: #282932;
   padding: 4em 6%;
 }
 
-.preamble h3, .requirements h3 {
+.preamble h3, 
+.requirements h3 {
   color: white;
   max-width: 34rem;
   margin: 0 auto .62em;
 }
 
-.preamble p, .requirements p {
+.preamble p, 
+.requirements p {
   max-width: 34rem;
   margin: 0 auto;
   color: #f6f4ec;
@@ -278,7 +279,7 @@ header abbr {
   color: black;
 }
 
-.explanation, .participation {
+.explanation, .sharp {
   width: 50%;
   box-sizing: border-box;
 }
@@ -288,48 +289,48 @@ header abbr {
   padding: 4em 10% 4em 8%;
 }
 
-#participation-unique {
+#sharp-desc {
   background-image: url('images/butcher_knife2.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 } 
-#participation-unique h3, 
-#participation-unique p {
+#sharp-desc h3, 
+#sharp-desc p {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2px 15px;
   color: white;
 }
 
-.participation {
+.sharp {
   display: inline-block;
   padding: 4em 8% 4em 10%;
   background: #9bc152;
 }
 
 .explanation h3, 
-.participation h3 {
+.sharp h3 {
   margin: 0 auto .62em;
   color: white;
 }
 
 .explanation p, 
-.participation p {
+.sharp p {
   margin: 0 auto;
 }
 
-.participation a {
+.sharp a {
   color: #282932;
   border-bottom: 1px solid #282932;
 }
 
-.participation a:hover {
+.sharp a:hover {
   color: #f6f4ec;
   border-bottom: 1px solid #f6f4ec;
 }
 
-.participation p:last-of-type a:nth-of-type(1),
-.participation p:last-of-type a:nth-of-type(2) {
+.sharp p:last-of-type a:nth-of-type(1),
+.sharp p:last-of-type a:nth-of-type(2) {
   font-family: 'Alegreya Sans SC', Verdana, sans-serif;
   text-transform: lowercase;
 }
@@ -463,19 +464,12 @@ aside {
   }
 
   .explanation h3, 
-  .participation h3, 
+  .sharp h3, 
   .preamble h3, 
   .requirements h3, 
   .benefits h3 {
     max-width: 27.5rem;
   }
-
-  /*.explanation p, 
-  .participation p, 
-  .preamble p, 
-  .requirements p, 
-  .benefits p {
-  }*/
 }
 
 @media (max-width: 54em) {
@@ -497,7 +491,7 @@ aside {
     font-size: 1.333em;
   }
 
-  .explanation, .participation {
+  .explanation, .sharp {
     width: 100%;
     padding: 4em 6%;
   }
@@ -558,10 +552,10 @@ aside {
     position: absolute;
     float: left;
     background: none;
-    max-width: 7.5rem;
+    max-width: 6.5rem;
     text-align: right;
     margin-top: 12em;
-    left: 50%;
+    left: 47%;
     margin-left: -25.5rem;
   }
 
