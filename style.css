@@ -342,7 +342,6 @@ header abbr {
   height: 100px;
   border-radius: 100px;
   background-color: white;
-  color: red;
   background-image: url('images/chef_draw.jpg');
   background-repeat: no-repeat;
   background-position: center top;
@@ -459,6 +458,10 @@ aside {
     font-size: 1.125em;
   }
 
+  #explanation-unique {
+    background-image: none;
+  }
+
   .summary p {
     max-width: 40rem;
   }
@@ -480,6 +483,7 @@ aside {
   .summary p {
     max-width: 34rem;
   }
+
 }
 
 @media (max-width: 47em) {
@@ -495,6 +499,11 @@ aside {
     width: 100%;
     padding: 4em 6%;
   }
+
+   #chef {
+    margin-left: 100px;
+  }
+
 }
 
 @media (max-width: 34em) {
@@ -545,6 +554,7 @@ aside {
   .resources {
     width: 100%;
   }
+
 }
 
 @media (min-width: 47em) {
